@@ -184,9 +184,12 @@
   
 
  
-  
+  .info{
+    margin-top: 100px;
+  }
 
   .article{
+    margin-top: 5000px;
     background-color: white;
     margin: 5px;
   }
@@ -257,12 +260,15 @@
     } 
 
     .red{
-      position: relative;
+     
+      
+      display: block;
       margin-top: 200px;
       font-size: 50px;
         text-align: center;
         color: #ff0000;
         font-weight: 900;
+        
     }
 
     .white{
@@ -398,6 +404,10 @@
       } */
       .navbar.active{
         display: block;
+      
+        position: relative;
+        width: 100%;
+        margin-top: 50px; 
       }
 
 

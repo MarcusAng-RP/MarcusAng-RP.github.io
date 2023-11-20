@@ -361,7 +361,16 @@
   }
 
   footer a{
-    color: #ffffff;
+    color: black;
+  }
+
+  footer i{
+    
+    font-size: 30px;
+  }
+
+  footer p{
+    color: #000000;
   }
 
 
@@ -375,7 +384,7 @@
 
     .flex-container{
       margin-top: 40%;
-      margin-bottom: 40%;
+      margin-bottom: 40rem;
     }
 
     .navbar{
@@ -396,7 +405,7 @@
       display: block; 
     }
     .article{
-      width: 80%;
+      width: 100%;
     }
 
     .flex-box{

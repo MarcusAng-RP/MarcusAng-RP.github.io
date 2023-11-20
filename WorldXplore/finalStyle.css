@@ -395,6 +395,13 @@
       
       display: block; 
     }
+    .article{
+      width: 100%;
+    }
+
+    .flex-box{
+      width: 100%;
+    }
 
       #menu-icon{
         display: block;

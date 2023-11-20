@@ -62,12 +62,22 @@
     background-color: #ffffff;
     font-weight: 600;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    padding: 20px 7%;
+    padding: 10px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
   }
+
+  .navbar.active { 
+   position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 4%;
+      background-color: #ffffff;
+    }
+
   header .navbar ul{
     list-style: none;
   }
@@ -115,9 +125,17 @@
     display: initial;
   }
 
-  .menu{
-    color: #ffffff;
+  /* .menu{
+    display: none;
     font-size: 30px;
+    cursor: pointer;
+  } */
+
+
+  #menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
   }
 
 
@@ -172,6 +190,50 @@
     background-color: white;
     margin: 5px;
   }
+
+
+
+
+  .stillCruise {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/cruise.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the image is behind other content */
+  }
+
+
+  
+  .stillNZ {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/stillnz.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the image is behind other content */
+  }
+   
+  .stillSG {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/stillsg.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the image is behind other content */
+  }
   
   .video {
         position: fixed;
@@ -183,6 +245,9 @@
         z-index: -1;
         filter: blur(1px);
     }
+
+
+
     
     .fullscreen-video {
         width: 100%;
@@ -307,16 +372,55 @@
     .image{
       width:100%;
     }
-  }
 
-  @media only screen and (max-width: 768px) {
-    .navbar { 
-    display: none; 
+    .flex-container{
+      margin-top: 40%;
+      margin-bottom: 40%;
     }
-    .menu{
-      color: black;
+
+    .navbar{
+      display: none;
     }
-  }
+
+      /* .navbar.active{
+        display: none;
+      } */
+      .navbar.active{
+        display: block;
+      }
+
+
+ 
+    .navbar ul li{ 
+      
+      display: block; 
+    }
+
+      #menu-icon{
+        display: block;
+      }
+      .video{
+        display: none;
+      }
+
+      .stillNZ{
+        display: block;
+      }
+
+      .stillCruise{
+        display: block;
+      }
+
+      .stillSG{
+        display: block;
+      }
+      .footer{
+        width: 100%;
+      }
+    }
+    
+  
+
  
 
   
